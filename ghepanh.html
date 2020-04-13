@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #Image1{
+        width: 500px;
+        height: 100px;
+    } #Image2{
+        width: 500px;
+        height: 100px;
+    } #Image3{
+        width: 500px;
+        height: 100px;
+    } #Image4{
+        width: 500px;
+        height: 100px;
+    } #Image5{
+        width: 500px;
+        height: 100px;
+    }
+</style>
+<body>
+
+<img id="Image1" onclick="changeImage1();" src="https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg" ><br>
+<img id="Image2" src="https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg"  onclick="changeImage2();"><br>
+<img id="Image3" src="https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg"  onclick="changeImage3();"><br>
+<img id="Image4" src="https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg"  onclick="changeImage4();"><br>
+<img id="Image5" src="https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg"  onclick="changeImage5();">
+<script>
+    Img01 = src ="https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg"
+    Img02 = src ="https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg"
+    Img03 = src ="https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg"
+    Img04 = src ="https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg"
+    Img05 = src ="https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg"
+    Img11 = src ="https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg"
+    Img12 = src ="https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg"
+    Img13 = src ="https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg"
+    Img14 = src ="https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg"
+    Img15 = src ="https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg"
+    Img1 = document.getElementById("Image1")
+    Img2 = document.getElementById("Image2")
+    Img3 = document.getElementById("Image3")
+    Img4 = document.getElementById("Image4")
+    Img5 = document.getElementById("Image5")
+
+    function changeImage1() {
+        if (Img1.src == Img01){
+        Img1.src = Img11;
+        } else {
+            Img1.src = Img01 ;}
+        if ((Img1.src == Img01)&&
+            (Img2.src == Img02)&&
+            (Img3.src == Img03)&&
+            (Img4.src == Img04)&&
+            (Img5.src == Img05)){
+            alert("Youwin")
+        }  if ((Img1.src == Img11)&&
+            (Img2.src == Img12)&&
+            (Img3.src == Img13)&&
+            (Img4.src == Img14)&&
+            (Img5.src == Img15)){
+            alert("Youwin")
+        }
+    };
+    function changeImage2() {
+        if (Img2.src == Img12){
+        Img2.src = Img02 ;
+        } else {
+            Img2.src = Img12 ;};
+        if ((Img1.src == Img01)&&
+            (Img2.src == Img02)&&
+            (Img3.src == Img03)&&
+            (Img4.src == Img04)&&
+            (Img5.src == Img05)){
+            alert("Youwin")
+        }  if ((Img1.src == Img11)&&
+            (Img2.src == Img12)&&
+            (Img3.src == Img13)&&
+            (Img4.src == Img14)&&
+            (Img5.src == Img15)){
+            alert("Youwin")
+        }
+
+    };
+    function changeImage3() {
+        if (Img3.src == Img03){
+        Img3.src = Img13;
+        } else {
+            Img3.src = Img03 ;}
+        if ((Img1.src == Img01)&&
+            (Img2.src == Img02)&&
+            (Img3.src == Img03)&&
+            (Img4.src == Img04)&&
+            (Img5.src == Img05)){
+            alert("Youwin")
+        }  if ((Img1.src == Img11)&&
+            (Img2.src == Img12)&&
+            (Img3.src == Img13)&&
+            (Img4.src == Img14)&&
+            (Img5.src == Img15)){
+            alert("Youwin")
+        }
+    };
+    function changeImage4() {
+        if (Img4.src == Img14){
+        Img4.src = Img04;
+        } else {
+            Img4.src = Img14 ;}
+        if ((Img1.src == Img01)&&
+            (Img2.src == Img02)&&
+            (Img3.src == Img03)&&
+            (Img4.src == Img04)&&
+            (Img5.src == Img05)){
+            alert("Youwin")
+        }  if ((Img1.src == Img11)&&
+            (Img2.src == Img12)&&
+            (Img3.src == Img13)&&
+            (Img4.src == Img14)&&
+            (Img5.src == Img15)){
+            alert("Youwin")
+        }
+    };
+    function changeImage5() {
+        if (Img5.src == Img05){
+        Img5.src = Img15;
+        } else {
+            Img5.src = Img05 ;}
+        if ((Img1.src == Img01)&&
+            (Img2.src == Img02)&&
+            (Img3.src == Img03)&&
+            (Img4.src == Img04)&&
+            (Img5.src == Img05)){
+            alert("Youwin")
+        }  if ((Img1.src == Img11)&&
+            (Img2.src == Img12)&&
+            (Img3.src == Img13)&&
+            (Img4.src == Img14)&&
+            (Img5.src == Img15)){
+            alert("Youwin")
+        }
+    };
+
+</script>
+</body>
+</html>
